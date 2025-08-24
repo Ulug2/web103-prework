@@ -1,0 +1,98 @@
+/* AddCreator page styles */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-input {
+  margin-bottom: 2rem;
+}
+
+.form-input label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.form-input p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4a90e2;
+}
+
+.form h2 {
+  color: #4a90e2;
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.form > div:has(h2) p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-submit-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+.submit-btn:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.form * {
+  font-family: inherit;
+}

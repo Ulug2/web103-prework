@@ -1,0 +1,182 @@
+/* ViewCreator page styles */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.view-creator-page {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.back-link {
+  display: inline-block;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: rgba(74, 144, 226, 0.1);
+}
+
+.creator-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.creator-image {
+  flex: 0 0 400px;
+}
+
+.creator-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #4a90e2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.creator-info {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.creator-name {
+  color: #4a90e2;
+  font-size: 3rem;
+  font-family: 'Fredoka One', cursive;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.creator-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  margin-bottom: 3rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.social-icon {
+  font-size: 1.8rem;
+}
+
+.youtube-link .social-icon {
+  color: #ff0000;
+}
+
+.twitter-link .social-icon {
+  color: #1da1f2;
+}
+
+.instagram-link .social-icon {
+  color: #e4405f;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-btn, .delete-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Loading and Error states */
+.loading-container,
+.error-container,
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .creator-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .creator-image {
+    flex: none;
+    align-self: center;
+  }
+  
+  .creator-image img {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .creator-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .action-buttons {
+    justify-content: center;
+  }
+}
